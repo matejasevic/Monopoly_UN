@@ -16,11 +16,24 @@ public class Player
     private String username;
     private boolean hasTurn;
     private ArrayList<Card> cards = new ArrayList<>();
+    private int money;
 
-    public Player(String username, boolean hasTurn) {
+    public Player(String username, boolean hasTurn, int money) {
         this.username = username;
         this.hasTurn = hasTurn;
+        this.money = money;
     }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+    
+
+    
     
     public String getUsername() {
         return username;

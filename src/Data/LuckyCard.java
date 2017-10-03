@@ -9,11 +9,14 @@ package Data;
  *
  * @author Juan Ochoa
  */
-public class LuckyCard extends Card
-{
+public class LuckyCard extends Card{
     private String description;
     private String penalty;
     private String bonus;
+
+    public LuckyCard(String name) {
+        super(name);
+    }
 
     public String getDescription() {
         return description;
